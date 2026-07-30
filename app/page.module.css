@@ -1,0 +1,136 @@
+.main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 3rem;
+}
+
+.header {
+    margin-bottom: 3rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--panel);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.title {
+    margin: 0.9rem 0 0.35rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    margin: 0;
+    color: var(--muted);
+}
+
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+    margin: 0 0 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+}
+
+.code {
+    margin: 0;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 0.6rem;
+    background: var(--code-bg);
+    font-size: 0.85rem;
+    overflow-x: auto;
+}
+
+.inlineCode {
+    padding: 0.1rem 0.35rem;
+    border-radius: 0.3rem;
+    background: var(--code-bg);
+    font-size: 0.85em;
+}
+
+.note {
+    margin: 0.75rem 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid var(--border);
+    border-radius: 0.6rem;
+    background: var(--panel);
+    overflow: hidden;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    padding: 0.7rem 1.1rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+.listItem:last-child {
+    border-bottom: none;
+}
+
+.toolName {
+    min-width: 8.5rem;
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.toolDescription {
+    flex: 1;
+    color: var(--muted);
+}
+
+.tokenTag {
+    padding: 0.1rem 0.45rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.7rem;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+}
+
+.link {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    color: var(--muted);
+}

@@ -1,13 +1,18 @@
 {
     "name": "typescript-mcp-server-base",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "main": "index.js",
     "type": "module",
     "bin": {
         "mcp-server": "./build/index.js"
     },
     "scripts": {
-        "build": "tsc && chmod 755 build/index.js"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "build:stdio": "tsc -p tsconfig.stdio.json",
+        "start:stdio": "node build/index.js",
+        "typecheck": "tsc --noEmit && tsc -p tsconfig.stdio.json --noEmit"
     },
     "files": [
         "build"
@@ -19,10 +24,16 @@
     "dependencies": {
         "@huggingface/inference": "^4.13.23",
         "@modelcontextprotocol/sdk": "^1.25.3",
+        "mcp-handler": "1.0.6",
+        "next": "^16.2.12",
+        "react": "^19.2.8",
+        "react-dom": "^19.2.8",
         "zod": "^4.3.6"
     },
     "devDependencies": {
         "@types/node": "^24.10.9",
+        "@types/react": "^19.2.17",
+        "@types/react-dom": "^19.2.3",
         "typescript": "^5.9.3"
     }
 }
